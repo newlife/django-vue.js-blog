@@ -12,16 +12,6 @@ module.exports = {
         path: '../static/js/dist/',
         filename: '[name].js'
     },
-    //module: {
-    //    loaders: [{
-    //        test: /\.js$/,
-    //        exclude: /node_modules/,
-    //        loader: 'babel',
-    //        query: {
-    //            presets: ['es2015', 'stage-0', 'react']
-    //        }
-    //    }]
-    //},
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             output: {

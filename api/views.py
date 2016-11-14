@@ -47,7 +47,7 @@ class ArticleDetailView(CheckSecurityMixin, StatusWrapMixin, JsonResponseMixin, 
         return obj
 
 
-class ArticleListView(CheckSecurityMixin, StatusWrapMixin, MultipleJsonResponseMixin, ListView):
+class ArticleListView( StatusWrapMixin, MultipleJsonResponseMixin, ListView):
     model = Article
     foreign = True
     exclude_attr = ['content', 'modify_time']
